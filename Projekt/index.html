@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="index.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body onload="Hamburger()">
+<div id="poczatek"> </div>
+<div id="menu">
+    <ul>
+        <li>
+            <a href="#lista" >Wstęp</a>
+        </li>
+        <li>
+            <a href="#metody" >Użycie</a>
+        </li>
+        <li>
+            <a href="#termi" >Terminy</a>
+        </li>
+        <li>
+            <a href="#pierwszyProgram" >Program</a>
+        </li>
+        <li>
+             <a href="#zmienne" >Zmienne</a>
+        </li>
+        <li>
+             <a href="#klasy" >Instrukcje</a>
+        </li>
+        <li>
+            <a href="#porady" >Pętle</a>
+        </li>
+    </ul>
+</div>
+<button id="hamburger" >&#9776;</button>
+<div id="naglowek">
+    <h1> Poradnik Programisty </h1>
+</div>
+<div id="linia"></div>
+<div id="srodek">
+    <div id="tresc">
+        <div id="lista">
+            <br/>
+            <br/>
+            <div id="JavaWst">
+                <img src="asset/Java-SE-Runtime-Environment-225x225.png">
+                <h1> Poradnik Programisty Java</h1>
+            </div>
+                <p>
+                   Java to obiektowy język programowania stworzony przez Jamesa Goslinga z firmy Sun Microsystems.
+                </p>
+            <br/>
+            <h2> Głowne koncepcje: </h2>
+                <ul>
+                    <li>
+                        Obiektowość
+                    </li>
+                    <li>
+                        Dziedziczenie
+                    </li>
+                    <li>
+                        Niezależność od architektury
+                    </li>
+                    <li>
+                        Niezawodność i bezpieczeństwo
+                    </li>
+                    <li>
+                        Wydajność
+                    </li>
+                </ul>
+        </div>
+
+
+        <div id="metody">
+            <br/>
+            <br/>
+            <h2>Popularne firmy, które używają Javy</h2>
+                <div class="wystawa">
+                    <figure class="firmyObraz">
+                        <img src="asset/google.png" alt="">
+                        <figcaption> Google </figcaption>
+                    </figure>
+
+                    <figure class="firmyObraz">
+                        <img src="asset/klu.png" alt="">
+                        <figcaption> KeyBank </figcaption>
+                    </figure>
+
+                    <figure class="firmyObraz">
+                        <img src="asset/ama.png" alt="">
+                        <figcaption> Amazon </figcaption>
+                    </figure>
+
+                    <figure class="firmyObraz">
+                        <img src="asset/mi.png" alt="">
+                        <figcaption> CHASE </figcaption>
+                    </figure>
+                </div>
+
+        </div>
+
+        <br/>
+
+        <div id="kolekcje">
+            <br/>
+            <br/>
+            <h2> Do czego używana jest Java? </h2>
+            <p>Java jest używana w wielu aplikacjach, których możesz używać na co dzień. Od naukowych aplikacji, finansowych do gier.
+                </p>
+            <div class="wystawa">
+                <div class="buttonF" onclick="funkcjaPierwsza()">
+                    <figure class="ChmuraOpisowa">
+                        <img src="asset/telefon.png" alt="">
+                        <figcaption id="lista1">Telefony</figcaption>
+                    </figure>
+                </div>
+
+                <div class="buttonF" onclick="funkcjaDruga()">
+                    <figure class="ChmuraOpisowa">
+                        <img src="asset/systemy.png" alt="">
+                        <figcaption id="lista2">Systemy PoS</figcaption>
+                    </figure>
+                </div>
+
+                <div class="buttonF" onclick="funkcjaTrzecia()">
+                    <figure class="ChmuraOpisowa">
+                        <img src="asset/gry.png" alt="">
+                        <figcaption id="lista3">Gry</figcaption>
+                    </figure>
+                </div>
+
+                <div class="buttonF" onclick="funkcjaCzwarta()">
+                    <figure class="ChmuraOpisowa">
+                        <img src="asset/swinka.png" alt="">
+                        <figcaption id="lista4">Aplikacje finansowe</figcaption>
+                    </figure>
+                </div>
+
+                <div class="buttonF" onclick="funkcjaPiata()">
+                     <figure class="ChmuraOpisowa">
+                        <img src="asset/kom.png" alt="">
+                        <figcaption id="lista5"> Big Data technologie
+                        </figcaption>
+                     </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="pierwszyProgram">
+            <br/>
+            <br/>
+            <h2>Pierwszy Program w Javie </h2>
+                <p>Tradycyjnie pierwszy program powinien wyświetlać tekst <q> Hello World </q> w konsoli. Do utworzenia tak prostego programu możemy użyć notatnika. Wystarczy przepiać następujący kod:</p>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b> Kod: </b> <br/>
+                        public class PierwszyProgram{ <br/>
+                        public static void main(String []args){ <br/>
+                        System.out.print(”Hello World”); <br/>
+                        } <br/>
+                        } <br/>
+                    </div>
+                </div>
+                <p>Notatnik należy zapisać z rozszerzeniem <q>.java</q> zamiast <q>.txt</q>. Nazwę pliku musimy zostawić taką sama jak klasy, czyli <q>PierwszyProgram.java</q> (wielkość liter ma znaczenie). </p>
+            <h3>Uruchomienie Programu</h3>
+                <p>Otwieramy konsole (cmd), a następnie przechodzimy do folderu z naszym notatnikiem. Plik musimy skompilować  wpisując <q>javac PierwszyProgram.java </q> </p>
+                    <div class="paczka">
+                        <div class="wzor">
+                            <b> Wzór </b> <br/>
+                            javac NazwaKlasy.java  <br/>
+                        </div>
+                    </div>
+                <p>Dzięki temu utworzy nam się plik z rozszerzeniem <q>.class</q> w środku, którego znajduje się bytecode. <br/>
+                    Teraz możemy uruchomić program wpisując <q>java PierwszyProgram.</q> </p>
+                    <div class="paczka">
+                        <div class="wzor">
+                            <b> Wzór </b> <br/>
+                            java NazwaKlasy  <br/>
+                        </div>
+                    </div>
+                <p>Program powinien wydrukować na ekranie napis Hello Wrold.</p>
+        </div>
+
+        <div id="termi">
+            <br/>
+            <br/>
+            <h2>Często używane Pojęcia w Javie</h2>
+                <div id="JavaZdje">
+                     <img src="asset/java2.png">
+                </div>
+            <h3>Klasa </h3>
+                <p> Jest szablonem definiującym postać obiektu.  Określa ona zarówno dane obiektu, jak i kod, który działa na tych danych. </p>
+            <h3>Obiekt </h3>
+                <p> Jest to instancja klasy, inaczej jej reprezentacja i nośnik. Jeżeli mówimy o czymś, że jest obiektem w Javie, to tak naprawdę wyobrażamy sobie całą klasę i wszystko to co się w niej znajduje. Poprzez obiekt możemy odwoływać się do zmiennych, metod i innych elementów w niej zawartych.</p>
+            <h3>Metoda </h3>
+                <p> Inaczej nazywana funkcją. Dokonuje się w niej różnych operacji. Metody mogą nie zwracać nic, ale równie dobrze dać w wyniku typ prosty, lub zwrócić obiekt. Niektóre mogą przyjmować także parametry, inne działać tylko na rzecz obiektu, który je wywołuje.</p>
+            <h3>Dziedziczenie </h3>
+                <p>Mechanizm, dzięki któremu jedna klasa może odziedziczyć zachowanie i atrybuty po innej klasie.
+                    Klasa, która dziedziczy po innej klasie, nazywana jest podklasą.
+                    Klasa, po której się dziedziczy, nazywa się klasą bazową lub nadklasą.
+                    Klasa może posiadać  tylko jedną nadklasę i wiele podklas. Podklasa dziedziczy wszystkie atrybuty i całe zachowanie po klasie bazowej.
+                </p>
+        </div>
+
+
+        <div id="zmienne">
+            <br/>
+            <br/>
+            <h2>Zmienne</h2>
+                <div class="ZdjeZmie">
+                    <img src="asset/zmienna.png">
+                    <br/> <br/>
+                </div>
+                    <div id="liczenie"> Jak to przechować?! </div> <br/>
+                <p>  Zmienna jest to element, w którym możemy przechowywać wartości, a następnie odwołać się do nich po nazwie.</p>
+                    <h3>Literał</h3>
+                <p> Poza zmiennymi w instrukcji programów Java pojawiają się literały. Literał to dowolna liczba, tekst lub inna informacja, która w sposób bezpośredni reprezentuje wartość. </p>
+                    <br/>
+                <p> W procesie tworzenia zmiennej wyróżniamy dwa etapy: <p>
+                <ul>
+                    <li>
+                        deklaracja
+                    </li>
+                    <li>
+                        inicjalizacja
+                    </li>
+                </ul>
+            <br/>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b> Wzór </b> <br/>
+                        Typ nazwa = wartość; <br/>
+                    </div>
+                </div>
+            <br/>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b>Przykład</b> <br/>
+                        Int zmienna; <br/>
+                        zmienna = 13; <br/>
+                    </div>
+                </div>
+            <br/>
+            <h3> Typy podstawowe  (ang. primitive types)</h3>
+                <ul>
+                    <h4>Liczby całkowite</h4>
+                        <li>
+                            byte
+                        </li>
+                        <li>
+                            short
+                        </li>
+                        <li>
+                            int
+                        </li>
+                        <li>
+                            long
+                        </li>
+                    <h4> Liczby zmiennopozycyjne </h4>
+                        <li>
+                            float
+                        </li>
+                        <li>
+                            double
+                        </li>
+                    <h4> Typ znakowy</h4>
+                        <li>
+                            char
+                        </li>
+                    <h4>Typ boolowski</h4>
+                        <li>
+                            boolean
+                        </li>
+                </ul>
+            <br/>
+
+            <h3> Stałe </h3>
+                <p> Zmienna z kluczowym słowem final oznacza,  że można tylko jeden raz przypisać wartość i nie będzie już jej można zmienić w programie. </p>
+            <br/>
+
+            <h3> Łańcuchy </h3>
+                <p> W Javie istnieje standardowa biblioteka zawierająca predefiniowaną klasę o nazwie String. Każdy łańcuch w cudzysłowie jest obiektem klasy String.</p>
+            <br/>
+
+            <br/>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b>Wzór</b> <br/>
+                        String nazwa = ”tekst”;<br/>
+                    </div>
+                </div>
+
+            <br/>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b>Przykład</b><br/>
+                        String tekst = ”test”;<br/>
+                    </div>
+                </div>
+        </div>
+
+        <div id="klasy">
+            <br/>
+             <br/> <h2>Instrukcje warunkowe </h2>
+
+            <div id="ZdjeZmieA">
+                <img src="asset/trudne.png">
+                <br/> <br/>
+            </div>
+            <div id="chmurka"> Pouczmy się! </div>
+
+            <p>Instrukcje warunkowe pozwalają na wykonanie bloku instrukcji, jeśli zostanie spełniony warunek, w przeciwnym wypadku wykonane są instrukcje z bloku else. </p>
+            <div class="paczka">
+                <div class="wzor">
+                        <b>Wzór</b><br/>
+                    If (warunek) {<br/>
+                    instrukcja<br/>
+                    } else{<br/>
+                    Instrukcja<br/>
+                    }<br/>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="paczka">
+                <div class="wzor">
+                    <b>Przykład</b><br/>
+                    If(cena>10){<br/>
+                    Koszyk+=10;<br/>
+                    }else{<br/>
+                    Koszyk+=cena;<br/>
+                    }<br/>
+                </div>
+            </div>
+
+        </div>
+<br/>
+        <div id="porady">
+            <br/>
+            <br/>
+            <h2>Pętle </h2>
+                <div class="ZdjeZmie">
+                    <img src="asset/eureka.png">
+                    <br/><br/>
+                </div>
+            <div id="Proste"> To takie proste! </div>
+
+            <h3>while</h3>
+                <p>Pętla while wykonuje instrukcje (albo blok instrukcji) tak długo, jak długo warunek ma wartość true. Warunek jest sprawdzany na samym początku działania, co oznacza, że pętla może się wcale nie wykonać. </p>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b>Wzór:</b><br/>
+                        while (warunek) { <br/>
+                        instrukcje <br/>
+                        } <br/>
+                    </div>
+                </div>
+            <h3>do while</h3>
+                <p>Pętla do while pierwsze wykonuje instrukcje, potem sprawdza warunek.  Wykona się co najmniej raz. </p>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b>Wzór:</b> <br/>
+                        do { <br/>
+                        instrukcje <br/>
+                        } while (warunek) <br/>
+                    </div>
+                </div>
+            <h3>for</h3>
+                <p>Pętla for to pętla o określonej liczbie powtórzeń. Liczba iteracji instrukcji for jest kontrolowana za pomocą licznika lub jakieś innej zmiennej, której wartość zmienia się po każdym powtórzeniu. </p>
+                <div class="paczka">
+                    <div class="wzor">
+                        <b>Przykład/Wzór</b><br/>
+                        for ( int i = 0; i<10; i++){ <br/>
+                        instrukcje <br/>
+                        } <br/>
+                    </div>
+                </div>
+            <br/>
+        </div>
+
+    </div>
+</div>
+<div id="stopka">Poradnik Programisty Java &copy; Jakub Brandys 2020 </div>
+</body>
+</html>

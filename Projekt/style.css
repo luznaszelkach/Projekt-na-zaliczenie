@@ -1,0 +1,498 @@
+@charset "UTF-8";
+
+html{
+    background: #2e303d;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif, cursive;
+    font-size: 18px;
+    color: black;
+    z-index: 1;
+}
+
+#menu{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    background: #2e303d;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 2px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: -5px -5px 15px black;
+    z-index: 999;
+}
+
+#menu ul{
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#menu li{
+    box-sizing: content-box;
+    display: inline-flex;
+    height: 40px;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 150%;
+    color: black;
+    width: 150px;
+    text-shadow:
+            0 -1px 0 whitesmoke,
+            -1px -2px 1px whitesmoke,
+            -2px -4px 2px whitesmoke;
+}
+
+#menu a:hover{
+    transform: scale(1.05);
+    transform: rotate(3deg);
+    transition: 0.2s all ease-in-out;
+    border: 2px solid black;
+}
+
+#hamburger{
+    position: fixed;
+    z-index: 9999;
+    height: 60px;
+    width: 60px;
+    background: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 1px -5px 5px black;
+}
+
+#naglowek{
+    min-height: 200px;
+    padding: 5px 1px 0px 1px;
+
+    animation-name:rozszerzanie;
+    animation-duration:4s;
+    animation-iteration-count:initial;
+    border-radius: 5px;
+}
+
+@keyframes rozszerzanie {
+    0%{
+        height: 200px;
+    }
+    20%{
+        height: 220px;
+    }
+    40%{
+        height: 245px;
+    }
+    60%{
+        height: 270px;
+    }
+    80%{
+        height: 280px;
+    }
+    100%{
+        height: 300px;
+    }
+}
+
+#naglowek h1{
+    font-size: 82px;
+    text-align: center;
+    background-image: url(asset/programista.jpeg);
+    box-shadow: -5px -5px 15px black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    grayscale(100%);
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    min-height: 200px;
+
+    animation-name:szerokosc;
+    animation-duration:4s;
+    animation-iteration-count:initial;
+    text-shadow:
+            1px -1px 0 whitesmoke,
+            -1px -2px 1px whitesmoke,
+            -2px -4px 2px whitesmoke,
+            -3px -6px 2px whitesmoke,
+            -4px -8px 2px whitesmoke,
+            0px -10px 3px whitesmoke;
+}
+
+
+@keyframes szerokosc
+{
+    0% {
+        width: 800px;
+        font-size: 74px;
+        text-shadow:
+                -15px -10px 1px whitesmoke,
+                -7px -10px 1px whitesmoke;
+    }
+    20% {
+        font-size: 80px;
+        text-shadow:
+                -10px -10px 1px whitesmoke,
+                -5px -10px 1px whitesmoke;
+    }
+    40%{
+        font-size:  84px;
+        text-shadow:
+                -5px -10px 1px whitesmoke ,
+                -2px -10px 1px whitesmoke ;
+    }
+    60%{
+        font-size: 88px;
+        text-shadow:
+                1px -10px 1px whitesmoke;
+    }
+    80%{
+        font-size: 92px;
+        text-shadow:
+                5px -10px 1px whitesmoke,
+                2px -10px 1px whitesmoke;
+    }
+    100%{
+        font-size: 82px;
+        width: 100%;
+    }
+}
+
+
+#lista{
+    background: whitesmoke;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+
+    animation-name:minimalizacja;
+    animation-duration:4s;
+    animation-iteration-count:initial;
+}
+
+
+
+@keyframes minimalizacja {
+    0%{
+        transform: scale(0.95);
+        margin-top: 10px;
+    }
+    20%{
+        transform: scale(0.92);
+        margin-top: 20px;
+    }
+    40%{
+        transform: scale(0.90);
+        margin-top: 30px;
+    }
+    60%{
+        transform: scale(0.88);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#linia{
+    height: 40px;
+    width: 100%;
+    background: #2e303d;
+    box-shadow: -5px -5px 15px black;
+}
+
+#JavaWst{
+    text-align: center;
+    position: relative;
+}
+
+
+#srodek{
+    background: #2e303d;
+    min-height: 300px;
+    padding: 0px 20px 20px 20px;
+    margin: 0px 200px 0px 200px;
+    box-shadow: -5px -5px 15px black;
+}
+
+#tresc{
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 0px 40px 0px 40px;
+    box-shadow: -5px -5px 15px black;
+}
+
+#tresc h2{
+    text-align: center;
+    border-bottom: 1px solid #2e303d;
+}
+
+#tresc h2:hover{
+   transform: scale(1.2) rotate(0.5deg);
+}
+
+#stopka{
+    padding: 5px;
+    background: #2e303d;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -5px -5px 15px black;
+}
+
+.wystawa{
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;box-sizing: content-box;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ChmuraOpisowa{
+    padding: 10px;
+    box-sizing: content-box;
+    display: flex;
+    text-align: center;
+    opacity: 0.8;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.ChmuraOpisowa img{
+    flex-basis: 100%;
+    width: 140px;
+    font-size: 26px;
+}
+
+.ChmuraOpisowa:hover{
+    transform: scale(1.2);
+    transform: rotate(60deg);
+}
+
+.buttonF{
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.firmyObraz{
+    padding: 20px;
+    box-sizing: content-box;
+    display: flex;
+    text-align: center;
+    opacity: 0.8;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.firmyObraz img{
+    width: 200px;
+    height: 200px;
+    flex-basis: 100%;
+}
+
+.firmyObraz:hover{
+    transform: scale(1.2) rotate(180deg);
+    transition: 0.3s all ease-in-out;
+}
+
+.wzor{
+    text-align: center;
+    border: 3px solid #2e303d;
+    padding: 10px;
+    width: 200px;
+    flex-wrap: wrap;
+    font-style: italic;
+    color: #2e303d;
+    border-radius: 50px ;
+}
+
+.paczka{
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wzor:hover{
+    transform: scale(1.3);
+}
+
+#tresc h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.ZdjeZmie{
+    text-align: center;
+}
+
+.ZdjeZmie img{
+    flex-basis: 100%;
+    height: 300px;
+}
+
+.ZdjeZmie img:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+#ZdjeZmieA{
+    text-align: center;
+}
+
+#ZdjeZmieA img{
+    flex-basis: 100%;
+    height: 300px;
+}
+
+#ZdjeZmieA img:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+#chmurka{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    visibility: collapse;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#ZdjeZmieA:hover + #chmurka{
+    border: 3px solid #2e303d;
+    visibility: visible;
+}
+
+#klasy #chmurka{
+    vertical-align: center;
+}
+
+#Proste{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    visibility: collapse;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#klasy #Proste{
+    vertical-align: center;
+}
+
+.ZdjeZmie:hover + #Proste{
+    border: 3px solid #2e303d;
+    visibility: visible;
+}
+
+#liczenie{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    visibility: collapse;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#klasy #liczenie{
+    vertical-align: center;
+}
+
+.ZdjeZmie:hover + #liczenie{
+    border: 3px solid #2e303d;
+    visibility: visible;
+}
+
+#JavaZdje{
+    text-align: center;
+}
+
+#JavaZdje img{
+    height: 150px;
+}
+
+#JavaZdje img:hover{
+   transform: scale(1.3) rotate(35deg);
+}
+
+@media only screen and  (max-width: 1100px){
+
+    #menu{
+        height: 80px;
+    }
+
+    #srodek{
+        padding: 0px 20px 20px 20px;
+        margin: 0px 100px 0px 100px;
+    }
+
+    #hamburger{
+        height: 50px;
+        width: 50px;
+    }
+
+    #menu{
+        padding-left: 35px;
+    }
+
+}
+
+
+@media only screen and  (max-width: 800px){
+
+    #menu{
+        padding-left: 15px;
+        margin-top: 0px;
+        height: 300px;
+        width: 100%;
+        border: 2px solid whitesmoke;
+    }
+
+    #menu li{
+        margin-top: 0px;
+        display: flex;
+        border: 2px solid whitesmoke;
+    }
+
+    #menu ul{
+        width: 75%;
+    }
+
+    #menu a{
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #hamburger{
+        margin-top: 311px;
+        height: 40px;
+        width: 40px;
+    }
+
+    #srodek{
+        padding: 0px 20px 20px 20px;
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+
